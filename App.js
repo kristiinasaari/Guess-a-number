@@ -16,9 +16,7 @@ export default function App() {
     console.log('Secret:', secret);
   }
 
-  useEffect(() => {
-    init();
-  }, [])
+  useEffect(init, [])
 
   const makeGuess = () =>  {
     const guess = Number(input);
